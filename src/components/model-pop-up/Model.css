@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container button{
+    font-size: 1.1rem;
+    padding: 7px;
+    margin-top: 10px;
+    background-color: cornflowerblue;
+    border: none;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.container button:hover{
+    transform: scale(0.98);
+    background-color: crimson;
+}
+.model{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: yellowgreen;
+    animation-name: showPopup;
+    animation-duration: 0.4s;
+}
+.model .content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.model header{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: darkgreen;
+    color: whitesmoke;
+    text-align: center;
+}
+.model header span{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 2.3rem;
+    cursor: pointer;
+}
+.model header span:hover{
+    color: crimson;
+    transform: scale(1.1);
+}
+.model main{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100%;
+}
+.model main p{
+    font-weight: bold;
+}
+.model footer{
+    width: 100%;
+    padding: 10px;
+    background-color: darkgreen;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@keyframes showPopup {
+    from{
+        opacity: 0;
+        top: -200px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}

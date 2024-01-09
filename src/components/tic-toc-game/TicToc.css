@@ -1,0 +1,43 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+.container .row{
+    display: flex;
+}
+.squares{
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid cadetblue; 
+    font-size: 2.5rem;
+    font-weight: bold
+}
+.container h2{
+    padding: 20px;
+}
+.container .win-sts{
+    color: #0fe00f;
+}
+.container .draw-sts{
+    color: blue;
+}
+.container .restart{
+    font-size: 1.1rem;
+    padding: 6px 10px;
+    font-weight: bold;
+    background-color: crimson;
+    border: none;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.container .restart:hover{
+    transform: scale(0.9);
+}

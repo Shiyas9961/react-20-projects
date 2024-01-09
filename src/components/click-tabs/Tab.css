@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 100vh;
+}
+.container .tab-container{
+    display: flex;
+    margin: 10px;
+}
+.tab-container .tab{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.tab-container .active{
+    background-color: burlywood;
+    color: black;
+}
+.container .item {
+    font-size: 1.1rem;
+    color: crimson;
+}
+.container h1{
+    color: crimson;
+}

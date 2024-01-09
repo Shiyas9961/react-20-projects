@@ -1,0 +1,35 @@
+.qr-code-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.input-val{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.input-val label{
+    font-size: 1.1rem;
+}
+.input-val input{
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    padding: 5px;
+    outline: none;
+}
+.qr-code-container button{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 5px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.qr-code-container button:disabled{
+    background-color: dimgrey;
+    color: lightgray;
+}
